@@ -20,33 +20,38 @@
 <li><strong>YouTube</strong>, through YouTube API Services: the channel's videos with their titles, publish times, lengths, and view, like and comment counts; YouTube Analytics for those videos (views, average view duration, shares, subscribers gained); and comments on the channel's videos, with each commenter's display name.</li>
 <li><strong>Instagram</strong>: the account's posts with their captions, times and links; their insights (views, reach, likes, comments, saves, shares, average watch time); and comments, with each commenter's username.</li>
 <li><strong>TikTok</strong>: the account's display name and follower count, and its public videos with their titles, lengths, and view, like, comment and share counts.</li>
+<li><strong>The Wave2Fly app</strong>, the team's iPhone app for the bot: what a team member sends in it (messages, and the clips, photos and voice memos they choose to add), each paired phone's name and model, and a notification token for that phone. It reads nothing else on the phone.</li>
 </ul>
-<p>It does not read direct messages, contacts, email, location or payment details.</p>
+<p>It does not read anyone's direct messages on those platforms, or contacts, email, location or payment details.</p>
 
 <h2>What it does with it</h2>
 <ul>
 <li>Shows the team how each post did and which clip it came from.</li>
 <li>Uses those numbers to plan the next posts.</li>
 <li>Drafts replies to new comments for the team to approve. A reply is posted only when a team member taps Post. The bot publishes nothing else on any platform.</li>
+<li>Shows the same updates in the Wave2Fly app, where a team member can also ask for a hook for a clip or save an idea. Voice memos are written down on the bot's own computer.</li>
 </ul>
 <p>None of it is sold or rented, used for advertising, or used for anything beyond running SyWavy's own accounts.</p>
 
 <h2>Who else sees it</h2>
 <ul>
-<li><strong>Anthropic.</strong> Post titles, numbers and comment text are sent to Anthropic's Claude AI models, which write the summaries, plans and draft replies.</li>
-<li><strong>Telegram.</strong> The bot's updates, including post numbers and the comments it drafted replies to, go to the team's private Telegram group.</li>
+<li><strong>Anthropic.</strong> Post titles, numbers and comment text, and what the team sends the bot (including still frames from a clip and what was said in it), are sent to Anthropic's Claude AI models, which write the summaries, plans, hooks and draft replies.</li>
+<li><strong>Telegram.</strong> The bot's updates, including post numbers and the comments it drafted replies to, go to the team's private Telegram group. Messages sent in the Wave2Fly app's group go there too, so the group reads the same in both places.</li>
 <li><strong>Google Drive.</strong> The team's posting calendar, in its own Google Drive, lists post titles and YouTube views.</li>
+<li><strong>Cloudflare.</strong> The Wave2Fly app reaches the bot's computer through Cloudflare, which carries that traffic, encrypted, between the phone and the computer.</li>
+<li><strong>Expo and Apple.</strong> Notifications to the app are sent through Expo's push service and Apple's, and carry a short preview, such as a comment and its drafted reply.</li>
 </ul>
 <p>No one else receives it, unless the law requires it.</p>
 
 <h2>Where it is kept, and for how long</h2>
-<p>On the one computer the bot runs on, and in that computer's private backup. The sign-in tokens for each platform are stored there too, in files only the owner's account can read. Post numbers are kept so posts can be compared over time, and draft replies are kept as a record of what was posted or skipped. Anything is deleted on request.</p>
+<p>On the one computer the bot runs on, and in that computer's private backup. The sign-in tokens for each platform are stored there too, in files only the owner's account can read. Post numbers are kept so posts can be compared over time, and draft replies are kept as a record of what was posted or skipped. Messages, clips and voice memos sent in the Wave2Fly app are kept there too, and a paired phone keeps a copy of what it has shown until the app is deleted. Anything is deleted on request.</p>
 
 <h2>Removing access</h2>
 <ul>
 <li><strong>Google and YouTube:</strong> remove SyWavy Bot on <a href="https://security.google.com/settings/security/permissions">Google's security settings page</a>.</li>
 <li><strong>Instagram:</strong> remove it in Instagram's settings, under Apps and websites.</li>
 <li><strong>TikTok:</strong> remove it in TikTok's security settings, where the apps with access are listed.</li>
+<li><strong>The Wave2Fly app:</strong> choose Forget this phone in the app's settings, or ask Jett to remove a phone. That phone can then no longer reach the bot.</li>
 </ul>
 <p>Once access is removed, the bot can no longer read or post anything there. To have stored data deleted too, or to have a stored copy of your comment deleted, email the address below.</p>
 
