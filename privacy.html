@@ -11,14 +11,14 @@
 <header><a href="./">SyWavy Bot</a></header>
 <main>
 <h1>Privacy policy</h1>
-<p class="meta">Last updated September 25, 2026</p>
+<p class="meta">Last updated October 4, 2026</p>
 
 <p>SyWavy Bot is a private tool run by Jett2Fly for the artist SyWavy. It connects to SyWavy's own accounts and no one else's. This page says what it reads, what it does with that, who else sees it, and how to remove it.</p>
 
 <h2>What it reads</h2>
 <ul>
-<li><strong>YouTube</strong>, through YouTube API Services: the channel's videos with their titles, publish times, lengths, and view, like and comment counts; YouTube Analytics for those videos (views, average view duration, shares, subscribers gained); and comments on the channel's videos, with each commenter's display name.</li>
-<li><strong>Instagram</strong>: the account's posts with their captions, times and links; their insights (views, reach, likes, comments, saves, shares, average watch time); and comments, with each commenter's username.</li>
+<li><strong>YouTube</strong>, through YouTube API Services: the channel's name, and its videos with their titles, publish times, lengths, and view, like and comment counts; and YouTube Analytics for those videos (views, average view duration, average percentage viewed, shares, subscribers gained). It does not read comment text or anything about the people who watch.</li>
+<li><strong>Instagram</strong>: the account's posts with their captions, times and links; and their insights (views, reach, likes, comments, saves, shares, average watch time).</li>
 <li><strong>TikTok</strong>: the account's display name and follower count, and its public videos with their titles, lengths, and view, like, comment and share counts.</li>
 <li><strong>The Wave2Fly app</strong>, the team's iPhone app for the bot: what a team member sends in it (messages, and the clips, photos and voice memos they choose to add), each paired phone's name and model, and a notification token for that phone. It reads nothing else on the phone.</li>
 </ul>
@@ -27,36 +27,43 @@
 <h2>What it does with it</h2>
 <ul>
 <li>Shows the team how each post did and which clip it came from.</li>
-<li>Uses those numbers to plan the next posts.</li>
-<li>Drafts replies to new comments for the team to approve. A reply is posted only when a team member taps Post. The bot publishes nothing else on any platform.</li>
+<li>Uses those numbers to suggest what to post next, when the team asks.</li>
+<li>Posts a video only when a team member taps Post it or sets a time for that post. It uploads that video with the caption the team approved: on YouTube as a Short, with the caption's first line as the title and the rest as the description. It never posts on its own, and it never changes a caption after the team has approved it. The bot publishes nothing else on any platform.</li>
 <li>Shows the same updates in the Wave2Fly app, where a team member can also ask for a hook for a clip or save an idea. Voice memos are written down on the bot's own computer.</li>
 </ul>
 <p>None of it is sold or rented, used for advertising, or used for anything beyond running SyWavy's own accounts.</p>
 
 <h2>Who else sees it</h2>
 <ul>
-<li><strong>Anthropic.</strong> Post titles, numbers and comment text, and what the team sends the bot (including still frames from a clip and what was said in it), are sent to Anthropic's Claude AI models, which write the summaries, plans, hooks and draft replies.</li>
-<li><strong>Telegram.</strong> The bot's updates, including post numbers and the comments it drafted replies to, go to the team's private Telegram group. Messages sent in the Wave2Fly app's group go there too, so the group reads the same in both places.</li>
+<li><strong>Anthropic.</strong> Post titles and numbers, and what the team sends the bot (including still frames from a clip and what was said in it), are sent to Anthropic's Claude AI models, which write the summaries, suggestions, hooks and caption drafts.</li>
+<li><strong>Telegram.</strong> The bot's updates, including post numbers, go to the team's private Telegram group. Messages sent in the Wave2Fly app's group go there too, so the group reads the same in both places.</li>
 <li><strong>Google Drive.</strong> The team's posting calendar, in its own Google Drive, lists post titles and YouTube views.</li>
 <li><strong>Cloudflare.</strong> The Wave2Fly app reaches the bot's computer through Cloudflare, which carries that traffic, encrypted, between the phone and the computer.</li>
-<li><strong>Expo and Apple.</strong> Notifications to the app are sent through Expo's push service and Apple's, and carry a short preview, such as a comment and its drafted reply.</li>
+<li><strong>Expo and Apple.</strong> Notifications to the app are sent through Expo's push service and Apple's, and carry a short preview, such as a post going up.</li>
 </ul>
 <p>No one else receives it, unless the law requires it.</p>
 
 <h2>Where it is kept, and for how long</h2>
-<p>On the one computer the bot runs on, and in that computer's private backup. The sign-in tokens for each platform are stored there too, in files only the owner's account can read. Post numbers are kept so posts can be compared over time, and draft replies are kept as a record of what was posted or skipped. Messages, clips and voice memos sent in the Wave2Fly app are kept there too, and a paired phone keeps a copy of what it has shown until the app is deleted. Anything is deleted on request.</p>
+<p>On the one computer the bot runs on, and in that computer's private backup. The sign-in tokens for each platform are stored there too, in files only the owner's account can read. Messages, clips and voice memos sent in the Wave2Fly app are kept there too, and a paired phone keeps a copy of what it has shown until the app is deleted.</p>
+<p>Data from YouTube is kept like this:</p>
+<ul>
+<li>View, like and comment counts and YouTube Analytics numbers are kept so posts can be compared over time.</li>
+<li>Everything else read from YouTube, such as video titles, is read again at least every 30 days, and anything not read again within 30 days is deleted.</li>
+<li>The bot checks that it still has access to YouTube at least every 30 days (in practice, every night). If that access is removed, everything it stored from YouTube is deleted within 7 days.</li>
+</ul>
+<p>Any stored data is deleted within 7 days of a request to the address below.</p>
 
 <h2>Removing access</h2>
 <ul>
 <li><strong>Google and YouTube:</strong> remove SyWavy Bot on <a href="https://security.google.com/settings/security/permissions">Google's security settings page</a>.</li>
 <li><strong>Instagram:</strong> remove it in Instagram's settings, under Apps and websites.</li>
-<li><strong>TikTok:</strong> remove it in TikTok's security settings, where the apps with access are listed.</li>
+<li><strong>TikTok:</strong> remove it in TikTok's security settings, where the apps with access are listed, and log the bot's computer out under Manage devices.</li>
 <li><strong>The Wave2Fly app:</strong> choose Forget this phone in the app's settings, or ask Jett to remove a phone. That phone can then no longer reach the bot.</li>
 </ul>
-<p>Once access is removed, the bot can no longer read or post anything there. To have stored data deleted too, or to have a stored copy of your comment deleted, email the address below.</p>
+<p>Once access is removed, the bot can no longer read or post anything there. To have stored data deleted too, email the address below.</p>
 
 <h2>Google and YouTube</h2>
-<p>SyWavy Bot uses YouTube API Services. Google's own handling of data is covered by the <a href="https://www.google.com/policies/privacy">Google Privacy Policy</a>, and using YouTube through the bot is covered by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</p>
+<p>SyWavy Bot uses YouTube API Services. Google's own handling of data is covered by the <a href="https://www.google.com/policies/privacy">Google Privacy Policy</a>, and using YouTube through the bot is covered by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Access to YouTube can be removed at any time on <a href="https://security.google.com/settings/security/permissions">Google's security settings page</a>.</p>
 
 <h2>Changes</h2>
 <p>If any of this changes, this page changes with it and the date at the top moves.</p>

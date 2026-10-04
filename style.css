@@ -32,6 +32,7 @@ h2 { font-size: 1.15rem; margin: 2.2rem 0 .4rem; }
 ul { padding-left: 1.2rem; }
 li { margin: .45rem 0; }
 a { color: var(--link); overflow-wrap: anywhere; }
+.yt img { vertical-align: -5px; margin-right: .35rem; }
 footer {
   margin-top: 3rem;
   padding-top: 1rem;
